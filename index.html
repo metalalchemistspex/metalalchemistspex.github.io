@@ -1,202 +1,209 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smishi Blog | Retro Small Build</title>
-    <style>
-        /* Retro 90s stil */
-        body {
-            background: #008080;
-            font-family: 'Courier New', 'MS Sans Serif', 'VT323', monospace;
-            margin: 0;
-            padding: 20px;
-        }
-        
-        .window {
-            background: #c0c0c0;
-            border: 3px solid;
-            border-color: #ffffff #808080 #808080 #ffffff;
-            max-width: 900px;
-            margin: 0 auto;
-            box-shadow: 8px 8px 0px rgba(0,0,0,0.2);
-        }
-        
-        .title-bar {
-            background: #000080;
-            color: white;
-            padding: 6px 10px;
-            font-weight: bold;
-            font-size: 14px;
-            display: flex;
-            justify-content: space-between;
-            cursor: default;
-        }
-        
-        .title-bar-buttons {
-            background: #c0c0c0;
-            padding: 0 4px;
-            color: black;
-        }
-        
-        .window-content {
-            padding: 20px;
-            background: #ffffff;
-            border: 2px inset #ffffff;
-            margin: 8px;
-        }
-        
-        h1 {
-            color: #000080;
-            font-size: 24px;
-            border-bottom: 3px dotted #c0c0c0;
-            font-family: 'Courier New', monospace;
-        }
-        
-        .post {
-            background: #ffffe0;
-            padding: 15px;
-            margin: 20px 0;
-            border: 1px solid #808080;
-            box-shadow: inset 1px 1px 0px #ffffff, inset -1px -1px 0px #808080;
-        }
-        
-        .post h2 {
-            color: #000080;
-            margin-top: 0;
-            font-size: 18px;
-        }
-        
-        .date {
-            color: #808080;
-            font-size: 11px;
-            font-family: monospace;
-            margin-bottom: 10px;
-        }
-        
-        .blink {
-            animation: blink 1s step-end infinite;
-        }
-        
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0; }
-        }
-        
-        .status-bar {
-            background: #c0c0c0;
-            padding: 4px 10px;
-            border-top: 1px solid #ffffff;
-            font-size: 11px;
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        a {
-            color: #000080;
-            text-decoration: underline;
-        }
-        
-        a:hover {
-            background: #000080;
-            color: white;
-            cursor: pointer;
-        }
-        
-        hr {
-            border: none;
-            border-top: 1px dotted #808080;
-        }
-        
-        .counter {
-            background: #000000;
-            color: #00ff00;
-            padding: 2px 6px;
-            font-family: monospace;
-            font-size: 14px;
-        }
-        
-        button {
-            background: #c0c0c0;
-            border: 2px outset #ffffff;
-            padding: 4px 12px;
-            font-family: monospace;
-            cursor: pointer;
-        }
-        
-        button:active {
-            border: 2px inset #ffffff;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smishi Blog | Retro Small Build</title>
+<style>
+/* Retro 90s stil */
+body {
+background: #008080;
+font-family: 'Courier New', 'MS Sans Serif', 'VT323', monospace;
+margin: 0;
+padding: 20px;
+}
+.window {
+background: #c0c0c0;
+border: 3px solid;
+border-color: #ffffff #808080 #808080 #ffffff;
+max-width: 900px;
+margin: 0 auto;
+box-shadow: 8px 8px 0px rgba(0,0,0,0.2);
+}
+.title-bar {
+background: #000080;
+color: white;
+padding: 6px 10px;
+font-weight: bold;
+font-size: 14px;
+display: flex;
+justify-content: space-between;
+cursor: default;
+}
+.title-bar-buttons {
+background: #c0c0c0;
+padding: 0 4px;
+color: black;
+}
+.window-content {
+padding: 20px;
+background: #ffffff;
+border: 2px inset #ffffff;
+margin: 8px;
+}
+h1 {
+color: #000080;
+font-size: 24px;
+border-bottom: 3px dotted #c0c0c0;
+font-family: 'Courier New', monospace;
+}
+.post {
+background: #ffffe0;
+padding: 15px;
+margin: 20px 0;
+border: 1px solid #808080;
+box-shadow: inset 1px 1px 0px #ffffff, inset -1px -1px 0px #808080;
+}
+.post h2 {
+color: #000080;
+margin-top: 0;
+font-size: 18px;
+}
+.date {
+color: #808080;
+font-size: 11px;
+font-family: monospace;
+margin-bottom: 10px;
+}
+.blink {
+animation: blink 1s step-end infinite;
+}
+@keyframes blink {
+0%, 100% { opacity: 1; }
+50% { opacity: 0; }
+}
+.status-bar {
+background: #c0c0c0;
+padding: 4px 10px;
+border-top: 1px solid #ffffff;
+font-size: 11px;
+display: flex;
+justify-content: space-between;
+}
+a {
+color: #000080;
+text-decoration: underline;
+}
+a:hover {
+background: #000080;
+color: white;
+cursor: pointer;
+}
+hr {
+border: none;
+border-top: 1px dotted #808080;
+}
+.counter {
+background: #000000;
+color: #00ff00;
+padding: 2px 6px;
+font-family: monospace;
+font-size: 14px;
+}
+.tag {
+background: #000080;
+color: #00ff00;
+padding: 1px 5px;
+font-size: 10px;
+font-family: monospace;
+margin-right: 4px;
+}
+code {
+background: #f0f0f0;
+border: 1px solid #c0c0c0;
+padding: 1px 4px;
+font-family: 'Courier New', monospace;
+}
+button {
+background: #c0c0c0;
+border: 2px outset #ffffff;
+padding: 4px 12px;
+font-family: monospace;
+cursor: pointer;
+}
+button:active {
+border: 2px inset #ffffff;
+}
+</style>
 </head>
 <body>
-
 <div class="window">
-    <div class="title-bar">
-        <span>📟 Smishi Blog.exe - Small Build Hakaton</span>
-        <span class="title-bar-buttons">[X] [_] [?]</span>
-    </div>
-    
-    <div class="window-content">
-        
-        <!-- ASCII Header -->
-        <pre>
-  _____                       _     _     
- / ____|                     (_)   | |    
-| (___  _ __ ___  __ _ _ __   _  __| |___ 
- \___ \| '_ ` _ \/ _` | '_ \ | |/ _` / __|
- ____) | | | | | | (_| | | | || | (_| \__ \
-|_____/|_| |_| |_|\__,_|_| |_||_|\__,_|___/
-        </pre>
-        
-        <p>⚡ Welcome to my <strong>small build</strong> hakaton journey! ⚡</p>
-        
-        <!-- Blog Posts -->
-        
-        <div class="post">
-            <h2>🚀 [DAY 1] Ideja je rođena</h2>
-            <div class="date">📅 15. JUN 2026. | 👤 metalalchemistspex | 💬 #smallbuild</div>
-            <p>Počeo sam! Cilj je napraviti nešto <strong>mali, ali moćan</strong>. Nema bloatware-a, nema nepotrebnih biblioteka. Čist HTML/CSS i malo JS. To je to.</p>
-            <p>Ideja: <em>"Neki alat koji rešava jedan mali problem, ali ga rešava savršeno."</em></p>
-            <button>📖 Read more...</button>
-        </div>
-        
-        <div class="post">
-            <h2>🔧 Šta je "small build" zapravo?</h2>
-            <div class="date">📅 14. JUN 2026. | 👤 metalalchemistspex</div>
-            <p>Small build je filozofija: <strong>Manje je više</strong>. Umesto da pravimo ogromne aplikacije koje rade svašta, fokusiramo se na JEDNU stvar i radimo je savršeno.</p>
-            <p>Primeri: URL shortener, todo lista ispod 1kb, ASCII art generator, terminal simulator...</p>
-            <button>📖 Read more...</button>
-        </div>
-        
-        <div class="post">
-            <h2>🎯 Moj plan za hakaton</h2>
-            <div class="date">📅 13. JUN 2026.</div>
-            <p>Napraviću <strong>GitHub profil "vizualizator"</strong> - alat koji prikazuje tvoj GitHub doprinos graf kao retro RGB matriks. Small, brz, smešan.</p>
-            <p>Tech stack: Vanilla JS + Canvas API + GitHub API. Bez framework-a, bez build stepa.</p>
-            <button>📖 Read more...</button>
-        </div>
-        
-        <hr>
-        
-        <!-- Footer Links -->
-        <p>
-            📌 <a href="https://www.loom.com/share/33f87e7836244b28ae054a346ce8ffff" target="_blank">🎥 Loom Video Demo</a> &nbsp;|&nbsp;
-            📁 <a href="https://github.com/metalalchemistspex" target="_blank">🐙 GitHub</a> &nbsp;|&nbsp;
-            💾 <a href="#">Download Source</a>
-        </p>
-        
-        <p>
-            <span class="blink">🟢</span> Status: <strong>BUILDING...</strong> &nbsp;&nbsp;
-            <span class="counter">Visitors: 1337</span>
-        </p>
-    </div>
-    
-    <div class="status-bar">
-        <span>📡 Small Build Hakaton 2026</span>
-        <span>⚡ Smishi Blog v1.0 | 88x31 certified</span>
-    </div>
+<div class="title-bar">
+<span>📟 Smishi Blog.exe - Small Build Hakaton</span>
+<span class="title-bar-buttons">[X] [_] [?]</span>
+</div>
+<div class="window-content">
+
+<!-- ASCII Header -->
+<pre>
+ _____ _      _     _     _
+/  ___| |    (_)   | |   (_)
+\ `--.| |_ __ _ ___ | |__  _
+ `--. \ | '_ \ | / _ \| '_ \| |
+/\__/ / | | | | | (_) | | | | |
+\____/|_|_| |_|_|\___/|_| |_|_|
+
+  NE NASEDAJ — Don't Fall For It
+</pre>
+
+<p>🎣 <strong>Smishi</strong> — an SMS phishing detector for Serbian, Bosnian, Croatian &amp; Montenegrin. Built for the Build Small Hackathon, June 2026. <span class="blink">🟢</span></p>
+
+<!-- Blog Posts -->
+
+<div class="post">
+<h2>🚨 [POST 1] Smishing is up 1,300% — and your filter doesn't speak Serbian</h2>
+<div class="date">📅 13. JUN 2026. | 👤 metalalchemistspex | <span class="tag">#problem</span> <span class="tag">#bhs</span></div>
+<p>Smishing has surged over <strong>1,300%</strong> in Serbia in the last three years. Messages impersonating Pošta Srbije, banks, and the traffic police land on phones daily — fake fines, fake parcels, fake prizes, all designed to make you click before you think.</p>
+<p>Here's the problem: <strong>every major phishing detector is trained on English.</strong> Run a Serbian SMS through one and it often just... shrugs. Not because the scam isn't obvious to a human — but because the model has never seen the specific tricks that work in Serbian, Bosnian, Croatian, and Montenegrin (BHS/SBCM):</p>
+<ul>
+<li>🔤 <strong>Case inflection</strong> — <code>nagrada</code>, <code>nagradu</code>, <code>nagradi</code>, <code>nagradom</code> are all the same "prize" lure, just in different grammatical cases. Five strings, one scam.</li>
+<li>🔀 <strong>Script duality</strong> — the same message can be Cyrillic or Latin, and the two can be <em>mixed</em>. A Cyrillic "а" looks identical to a Latin "a" — to your eyes. Not to a keyword filter.</li>
+<li>📭 <strong>No dataset</strong> — we looked. There wasn't a public, labeled BHS smishing dataset anywhere. So we built one. 1,529 messages, phishing + legitimate, Cyrillic + Latin.</li>
+</ul>
+<p>That's the gap. <code>Smishi</code> is our attempt to close it.</p>
 </div>
 
+<div class="post">
+<h2>⚙️ [POST 2] 110 million parameters walk into a phishing filter</h2>
+<div class="date">📅 14. JUN 2026. | 👤 metalalchemistspex | <span class="tag">#architecture</span> <span class="tag">#bertic</span></div>
+<p>Under the hood, Smishi is an <strong>ensemble</strong> — two models plus rule-based heuristics, all running on CPU:</p>
+<ul>
+<li><strong>Model A</strong>: TF-IDF (character n-grams, 3–5) + Logistic Regression. Fast, simple, surprisingly solid baseline.</li>
+<li><strong>Model B</strong>: fine-tuned BERTić — <strong>110 million parameters</strong>. Not 70B, not 8B. 110 million. Small enough to run on a laptop, fine-tuned specifically for BHS phishing. <code>96.96% accuracy</code>, <code>96.3% F1</code>.</li>
+<li><strong>Heuristics</strong>: suspicious/typosquatted domains, message length, urgency-language flags.</li>
+</ul>
+<p>Both models' predictions and confidence scores show up side by side in the UI, along with <em>which</em> red flags fired. Not just "phishing: yes" — "phishing: yes, because <code>fake URL</code> + <code>urgency keyword</code> + <code>impersonation pattern</code>."</p>
+<p>A favorite test case — a message reading <code>"MUP: Sаobraćajni prekršaj evidentiran..."</code> — has a Cyrillic "а" hiding inside otherwise-Latin text. Same pixels, different Unicode code point (U+0430 vs U+0061). Smishi catches it. Most keyword filters wouldn't even notice it's there.</p>
+</div>
+
+<div class="post">
+<h2>📊 [POST 3] Don't trust us — run the numbers yourself</h2>
+<div class="date">📅 15. JUN 2026. | 👤 metalalchemistspex | <span class="tag">#results</span> <span class="tag">#demo</span></div>
+<p>We built a <strong>105-case test set</strong> covering homographs, typosquatting, morphological case variants, and no-link IBAN scams — and it's downloadable directly from the app's batch-test section. Upload it back in, hit run, and watch the results table populate in real time.</p>
+<p>Current score: <strong>93.3% (97/105)</strong>. Most of what we miss is no-link phishing — scams that rely on IBAN numbers or pure social pressure instead of a clickable link. That's the next thing on the list, and we're saying so out loud rather than hiding it.</p>
+<p>And then, mid-build, this happened: one of us got a real SMS — fake traffic police, fabricated case number, citing an actual article of law, 24-hour payment deadline. Not a training example. Not a test case. Just... Tuesday. <code>Ne nasedaj.</code> 🛡️</p>
+<button onclick="window.open('https://www.loom.com/share/33f87e7836244b28ae054a346ce8ffff','_blank')">▶️ Watch the demo</button>
+</div>
+
+<hr>
+
+<!-- Footer Links -->
+<p>
+📌 <a href="https://www.loom.com/share/33f87e7836244b28ae054a346ce8ffff" target="_blank">🎥 Loom Video Demo</a> &nbsp;|&nbsp;
+🤗 <a href="https://huggingface.co/spaces/build-small-hackathon/ne-nasedaj-sms-phishing" target="_blank">🎣 Live Space</a> &nbsp;|&nbsp;
+🧠 <a href="https://huggingface.co/ravi2505/ne-nasedaj-sms-phishing" target="_blank">Model Card</a> &nbsp;|&nbsp;
+📁 <a href="https://github.com/metalalchemistspex" target="_blank">🐙 GitHub</a>
+</p>
+<p>
+<span class="blink">🟢</span> Status: <strong>SUBMITTED</strong> &nbsp;&nbsp;
+<span class="counter">Visitors: 1337</span>
+</p>
+
+</div>
+<div class="status-bar">
+<span>📡 Build Small Hakaton 2026</span>
+<span>⚡ Smishi Blog v1.0 | ne nasedaj 🎣</span>
+</div>
+</div>
 </body>
 </html>
